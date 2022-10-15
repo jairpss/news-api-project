@@ -1,13 +1,18 @@
-import { useState } from 'react'
+import { Container, Grid, Typography } from '@mui/material'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div>
-      <h1>News App</h1>
-    </div>
+    <Container>
+        <header>
+            <Typography
+              align='center' marginY={5} component='h1' variant='h3'
+            > 
+              News App 
+            </Typography>
+        </header>
+    </Container>
   )
 }
 
