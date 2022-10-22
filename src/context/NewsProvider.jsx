@@ -5,7 +5,7 @@ const NewsContext = createContext()
 
 const NewsProvider = ({children}) => {
     const [category, setCategory] = useState('general')
-    const [news, setNews] = useState([])
+    const [noticias, setNews] = useState([])
 
     useEffect(() =>{
         const consultAPI = async () => {
@@ -25,7 +25,7 @@ const NewsProvider = ({children}) => {
             value={{
                 category,
                 handleChangeCategory,
-                news
+                noticias
             }}
         >
             {children}
